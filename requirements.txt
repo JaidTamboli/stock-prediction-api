@@ -137,6 +137,7 @@ peewee==3.17.9
 pi_heif==0.21.0
 pikepdf==9.5.2
 pillow==11.1.0
+pipdeptree==2.25.0
 platformdirs==4.3.6
 portalocker==2.10.1
 propcache==0.2.1
@@ -169,7 +170,6 @@ python-multipart==0.0.20
 python-oxmsg==0.0.2
 python-socketio==5.12.1
 pytz==2024.2
-pywin32==308
 PyYAML==6.0.2
 qdrant-client==1.13.2
 RapidFuzz==3.12.1
