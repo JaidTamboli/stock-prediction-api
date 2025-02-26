@@ -9,6 +9,9 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.losses import MeanSquaredError
 from flask_cors import CORS
 
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppresses INFO and WARNING messages
+
 # Initialize Flask App
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes

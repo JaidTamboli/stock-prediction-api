@@ -4,4 +4,5 @@ numpy
 gunicorn
 pandas
 scikit-learn
-
+tensorflow
+tensorflow[and-cpu-opt]
