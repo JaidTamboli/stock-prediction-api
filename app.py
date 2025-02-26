@@ -11,6 +11,7 @@ from flask_cors import CORS
 
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppresses INFO and WARNING messages
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 # Initialize Flask App
 app = Flask(__name__)

@@ -6,3 +6,6 @@ pandas
 scikit-learn
 tensorflow
 tensorflow[and-cpu-opt]
+pip freeze > requirements.txt
+flask-cors
+tensorflow-cpu
