@@ -3,6 +3,7 @@ import requests
 import numpy as np
 import pandas as pd
 import datetime
+import tensorflow as tf
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
@@ -22,9 +23,8 @@ API_KEY = "8149690927ae4161a977ab79a3bcd0dd"
 BASE_URL = "https://api.twelvedata.com/time_series"
 
 # Directory where trained models are stored
-MODEL_DIR = os.path.abspath("D:/Downloads/StockPredictionAPI/model")
-print("Model directory path:", MODEL_DIR)  
-print("Available models:", os.listdir(MODEL_DIR))  # Print available models
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, "models")  # Ensure 'models' folder exists
 
 # Ensure the directory exists
 if not os.path.exists(MODEL_DIR):
