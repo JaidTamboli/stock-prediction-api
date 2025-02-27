@@ -64,7 +64,7 @@ greenlet==3.1.1
 grpcio==1.70.0
 grpcio-status==1.70.0
 grpcio-tools==1.70.0
-gunicorn==23.0.0
+gunicorn
 h11==0.14.0
 h2==4.2.0
 h5py==3.12.1
@@ -201,7 +201,7 @@ tenacity==9.0.0
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
 tensorflow==2.18.0
-tensorflow_intel==2.18.0
+tensorflow
 termcolor==2.5.0
 tf_keras==2.18.0
 threadpoolctl==3.5.0
@@ -234,4 +234,3 @@ wsproto==1.2.0
 yarl==1.18.3
 yfinance==0.2.53
 zstandard==0.23.0
-"gunicorn" 
