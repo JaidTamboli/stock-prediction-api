@@ -24,7 +24,7 @@ BASE_URL = "https://api.twelvedata.com/time_series"
 
 # Directory where trained models are stored
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_DIR = os.path.join(BASE_DIR, "models")  # Ensure 'models' folder exists
+MODEL_DIR = os.path.join(BASE_DIR, "model")  # Ensure 'models' folder exists
 
 # Ensure the directory exists
 if not os.path.exists(MODEL_DIR):
