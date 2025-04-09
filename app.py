@@ -1,5 +1,4 @@
 import os
-import threading
 import requests
 import numpy as np
 import pandas as pd
@@ -35,20 +34,6 @@ if not os.path.exists(MODEL_DIR):
 @app.route("/")
 def home():
     return "Stock Prediction API is running!"
-
-# Self-pinging function to keep the server awake
-def keep_awake():
-    url = "https://stock-prediction-api-mku6.onrender.com"  # Replace with your Render URL
-    while True:
-        try:
-            requests.get(url)
-            print("Self-ping successful")
-        except Exception as e:
-            print(f"Self-ping error: {e}")
-        threading.Timer(600, keep_awake).start()  # Ping every 10 minutes
-
-# Start self-pinging in a separate thread
-threading.Thread(target=keep_awake, daemon=True).start()
 
 # Function to Fetch Latest Stock Data
 def fetch_stock_data(stock_symbol, days=8):
