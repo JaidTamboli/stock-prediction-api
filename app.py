@@ -88,7 +88,7 @@ def predict_stock():
         return jsonify({"error": error or "Insufficient data available"}), 500
     scaler = MinMaxScaler()
     df[["Close"]] = scaler.fit_transform(df[["Close"]])
-    X_input = df["Close"].values.reshape(1, 7, 1)
+    X_input = df["Close"].values[-7:].reshape(1, 7, 1)
     try:
         model = load_model(model_path, custom_objects={"mse": MeanSquaredError()})
         predicted_price = None
